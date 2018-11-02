@@ -1,0 +1,6 @@
+D:\ASP.NET\WA_ASP_MVC\WA_ASP_MVC\bin\WA_ASP_MVC.dll.config
+D:\ASP.NET\WA_ASP_MVC\WA_ASP_MVC\bin\WA_ASP_MVC.dll
+D:\ASP.NET\WA_ASP_MVC\WA_ASP_MVC\bin\WA_ASP_MVC.pdb
+D:\ASP.NET\WA_ASP_MVC\WA_ASP_MVC\obj\Debug\WA_ASP_MVC.csprojResolveAssemblyReference.cache
+D:\ASP.NET\WA_ASP_MVC\WA_ASP_MVC\obj\Debug\WA_ASP_MVC.dll
+D:\ASP.NET\WA_ASP_MVC\WA_ASP_MVC\obj\Debug\WA_ASP_MVC.pdb
