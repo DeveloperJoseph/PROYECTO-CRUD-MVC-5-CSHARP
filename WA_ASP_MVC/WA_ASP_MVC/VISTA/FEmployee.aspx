@@ -4,6 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+        <link href="../Recursos/Content/Bootstrap/bootstrap.css" rel="stylesheet" />
+    <script src="../Recursos/Scripts/Bootstrap/bootstrap.js"></script>
+    <script src="../Recursos/Scripts/Jquery/jquery-1.12.4.js"></script>
     <style>
         .grid{
             margin: 0 auto;
@@ -27,7 +30,7 @@
         <asp:Label ID="txtCodigo" runat="server"></asp:Label>
         <br />
         <br />
-        <asp:Button ID="Button1" runat="server" Text="CONSULTAR PEDIDOS" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Text="CONSULTAR PEDIDOS" OnClick="Button1_Click" />
         <br />
         <br />
         <asp:GridView ID="GridView1" runat="server" Width="376px" CssClass="grid">
