@@ -18,10 +18,9 @@
             <div>
                 <label>TIPO DE USUARIO </label>
                 <asp:DropDownList ID="DropDownList1" runat="server">
-                    <asp:ListItem Value="ADMINISTRADOR">ADMINISTRADOR</asp:ListItem>
-                    <asp:ListItem Value="SUPERVISOR">SUPERVISOR</asp:ListItem>
-                    <asp:ListItem Value="EMPLEADO">EMPLEADO</asp:ListItem>
                 </asp:DropDownList>
+                &nbsp;
+                <asp:TextBox ID="txtPrivilegio" runat="server"></asp:TextBox>
             </div>
             <div class="form-group">
                 <label>EMAIL</label>

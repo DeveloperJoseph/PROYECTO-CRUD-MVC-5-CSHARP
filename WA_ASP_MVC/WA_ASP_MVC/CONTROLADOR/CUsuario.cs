@@ -15,7 +15,7 @@ namespace WA_ASP_MVC.CONTROLADOR
 
         public DataTable LogeoUsuario()
         {
-            using (SqlDataAdapter dA = new SqlDataAdapter("sp_LogeoUsuario",cnn))
+            using (SqlDataAdapter dA = new SqlDataAdapter("sp_LoginUsuario", cnn))
             {
                 dA.SelectCommand.CommandType = CommandType.StoredProcedure;
                 dA.Fill(dT);
@@ -23,6 +23,20 @@ namespace WA_ASP_MVC.CONTROLADOR
             return dT;
         }
 
+        public DataTable LoginUsuario(int idEspecialidad, string email, string password)
+        {
+            using (SqlDataAdapter dA = new SqlDataAdapter("sp_LoginUsuario", cnn))
+            {
+                dA.SelectCommand.CommandType = CommandType.StoredProcedure;
+                dA.SelectCommand.Parameters.AddWithValue("@idPrivilegio", idEspecialidad.ToString());
+                dA.SelectCommand.Parameters.AddWithValue("@idPrivilegio", email.ToString());
+                dA.SelectCommand.Parameters.AddWithValue("@idPrivilegio", password.ToString());
+                dA.Fill(dT);
+            }
+            cnn.Close();
+            return dT;
+        }
+        /*
         public void AgregarUser(MUsuario u)
         {
             using (SqlCommand cmd = new SqlCommand("sp_AgregarUser", cnn))
@@ -36,5 +50,6 @@ namespace WA_ASP_MVC.CONTROLADOR
                 cmd.ExecuteNonQuery();
             }
         }
+         */
     }
 }

@@ -7,11 +7,12 @@ namespace WA_ASP_MVC.MODELO
 {
     public class MUsuario
     {
-        public int idUser { get; set; }
-        public String   nameUser { get; set; }
-        public String tipoUser { get; set; }
-              public String emailUser { get; set; }
-              public String passwordUser { get; set; }
+        public int idUsuario { get; set; }
+        public int idPrivilegio { get; set; }
+        public String   Name_usuario { get; set; }
+        public String Email_Usuario { get; set; }
+        public String Password_Usuario { get; set; }
+
     
     }
 }
